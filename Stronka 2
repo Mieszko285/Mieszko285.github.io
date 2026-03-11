@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        background-color: lightblue;
+    }
+</style>
+<title>MINECON2026/1</title>
+</head>
+<body>
+<h1>MINECON2026 MARZEC</h1>
+<p>DATA I GODZINE MINECONU!</p>
+<a href="stronka2">LINK DO STRONKI 2</a>
+<img src="img/Minecon.png" alt="21 MARZEC GODZINA 19" width="1000" height="1000">
+</body>
+</html>
