@@ -1,16 +1,18 @@
 body {
-        background-color: lightgrey;
+    background-color: lightgrey;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    animation-name: myAnimation;
+    animation-duration: 4s;
 }
+
 @keyframes myAnimation {
-  from {background-color: red;}
-  to {background-color: yellow;}
-}
+    from {
+        background-color: red;
+    }
 
-
-div {
-  width: 100px;
-  height: 100px;
-  background-color: lightgreen;
-  animation-name: myAnimation;
-  animation-duration: 4s;
+    to {
+        background-color: yellow;
+    }
 }
