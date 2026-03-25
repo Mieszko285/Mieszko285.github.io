@@ -3,11 +3,19 @@ body {
     height: 100px;
     background-color: lightgreen;
     animation-name: myAnimation;
-    animation-duration: 4s;
+    animation-duration: 10s;
 }
 
 @keyframes myAnimation {
     from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+
+    to {
         background-color: red;
     }
 
