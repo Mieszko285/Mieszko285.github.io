@@ -57,3 +57,52 @@ body{
   bottom: 0;
 }
 
+.favorite{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  font-size: 30px;
+  color: white;
+
+  z-index: 10;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.favorite.active{
+  color: red;
+  transform: scale(1.2);
+}
+
+
+.favorites-button{
+  position: fixed;
+
+  left: 20px;
+  bottom: 20px;
+
+  background: rgba(0,0,0,0.7);
+  color: white;
+
+  padding: 15px 20px;
+
+  border-radius: 15px;
+
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+
+  z-index: 1000;
+}
+
+.favorites-button:hover{
+  transform: scale(1.05);
+  background: rgba(255,0,100,0.8);
+}
