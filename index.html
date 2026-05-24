@@ -11,13 +11,18 @@
 <body>
 
 
+
   <div class="favorites-button">
-    ❤️ Ulubione
+    ❤️ Ulubione (0)
   </div>
 
 
+  
+
   <div class="container">
 
+
+  
 
     <div class="card">
 
@@ -33,6 +38,8 @@
       </div>
 
     </div>
+
+
 
 
     <div class="card">
@@ -51,6 +58,8 @@
     </div>
 
 
+
+
     <div class="card">
 
       <div class="heart">♡</div>
@@ -65,6 +74,8 @@
       </div>
 
     </div>
+
+
 
 
     <div class="card">
@@ -83,6 +94,8 @@
     </div>
 
 
+
+
     <div class="card">
 
       <div class="heart">♡</div>
@@ -99,6 +112,8 @@
     </div>
 
 
+
+
     <div class="card">
 
       <div class="heart">♡</div>
@@ -113,6 +128,9 @@
       </div>
 
     </div>
+
+
+
 
     <div class="card">
 
@@ -131,7 +149,48 @@
 
   </div>
 
+
+
+
+  <script>
+
+    const hearts = document.querySelectorAll(".heart");
+
+    const favoritesButton = document.querySelector(".favorites-button");
+
+    let favoritesCount = 0;
+
+
+    hearts.forEach(heart => {
+
+      heart.addEventListener("click", () => {
+
+        heart.classList.toggle("active");
+
+        if (heart.classList.contains("active")) {
+
+          heart.innerHTML = "❤️";
+
+          favoritesCount++;
+
+        } else {
+
+          heart.innerHTML = "♡";
+
+          favoritesCount--;
+
+        }
+
+        favoritesButton.innerHTML = `❤️ Ulubione (${favoritesCount})`;
+
+      });
+
+    });
+
+  </script>
+
 </body>
+
 </html>
 
 
